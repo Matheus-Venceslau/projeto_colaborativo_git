@@ -1,0 +1,93 @@
+1 - Crie um repositório no GitHub chamado “projeto_colaborativo” e adicione um arquivo
+README.md explicando o objetivo do projeto.
+
+git init 
+# Inicializa o repositório git, iniciando a configuração e a observação da pasta
+
+# Etapa de configuração de usuário e email
+git config --global user.name "Matheus_Venceslau" 
+git config --global user.email matheushlvenceslau@gmail.com
+
+# Criação do arquivo README.md
+nano README.md # Usei o editor de texto nano para criar o arquivo
+
+	# Esse é um README explicando o projeto
+
+	Basicamente é um teste de conhecimentos git
+
+Ctrl + x
+y
+enter
+
+# Adicionando esse arquivo criado para a observação do git
+git add README.md
+
+git status # Verificando se deu certo
+
+git commit -m "Adicionando README.md" # Arquivo commitado (adicionado a linha do tempo e sendo observado para mudanças futuras)
+
+----
+
+Criação do repositório no GitHub:
+1 - Acessei minha conta
+2 - fui na aba "Repositories"
+3 - Cliquei em "New"
+4 - nomeei o projeto de "projeto_colaborativo_git" (teve que ser projeto_colaborativo_git porque sem o _git já existia)
+5 - copiei o link do projeto ssh
+
+----
+
+git branch -M main # renomeando a branch master para main (por conta do padrão)
+
+git add remote origin https://github.com/Matheus-Venceslau/projeto_colaborativo_git.git # adicionando uma origem remota para subir as alterações
+
+git push -u origin main # subindo as alterações para o GitHub
+
+
+2 - Convide um colega para colaborar no seu repositório e explique como definir permissões
+de escrita para ele
+
+R: Dentro do repositório GitHub vá até "Settings";
+Na aba "Access" vá em "Collaborators" e em "Manage access" clique em "Add people" e digite ou o Username, ou full name ou o email de quem deseja convidar;
+Depois selecione e clique em "Add to repositor"
+
+3 - Faça um clone do repositório em sua máquina local usando o terminal.
+
+git clone https://github.com/Matheus-Venceslau/projeto_colaborativo_git.git
+
+4 - Crie uma branch chamada “feature1” e faça uma alteração simples no README.md,
+depois envie para o GitHub.
+
+# Criação da nova branch
+git branch feature1
+
+# Entrando nessa nova branch criada
+git switch feature1
+
+# Alterando o arquivo
+
+nano README.md
+
+	# Novo README
+
+Ctrl + x
+y
+enter
+
+git add README.md
+
+git commit -m "Alterações no README do projeto"
+
+git push origin feature1 # Subindo a branch segundaria para o GitHub 
+
+
+5 - Abra um Pull Request no GitHub para que sua alteração seja revisada e mesclada à
+branch principal
+
+R: No repositório do projeto no GitHub, vá até a aba "Pull Requests" e clique em "compare e pull request";
+depois adicione um titulo e uma descrição e clique em "Create pull request"
+
+
+
+
+ 
